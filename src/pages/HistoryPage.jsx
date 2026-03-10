@@ -1,10 +1,12 @@
 import React from "react";
+import "../css/main.css";
 
 const HistoryPage = () => {
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="page-card">
       <h1>Historia Transakcji</h1>
-      <p>Tutaj pojawi się lista Twoich przelewów i operacji bankowych.</p>
+      <p>Ostatnie operacje na Twoim koncie:</p>
+      <p>lista za pomoca map</p>
     </div>
   );
 };
