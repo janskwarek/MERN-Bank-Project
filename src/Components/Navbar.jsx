@@ -22,7 +22,9 @@ function NavBar() {
         </Link>
         <div className="auth-status">
           <span className="status-dot"></span>
-          <p>Nie zalogowano</p>
+          <Link to="/login" className="nav-link">
+            Zaloguj się
+          </Link>
         </div>
       </div>
     </nav>
