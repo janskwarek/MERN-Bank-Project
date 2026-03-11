@@ -1,98 +1,57 @@
-:root {
-  --bank-navy: #1a237e; /* Główny kolor zaufania */
-  --bank-blue: #0d47a1; /* Kolor akcentów */
-  --bank-light: #f8f9fa; /* Tło dla tekstu statusu */
-  --bank-white: #ffffff;
-  --bank-gray: #e0e0e0;
-  --status-off: #f44336; /* Czerwony dla "niezalogowany" */
-  --transition: all 0.3s ease;
-}
-
+/* navbar.css */
 .navbar {
+  background-color: #0a192f;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
-  height: 70px;
-  background-color: var(--bank-navy);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 0 5%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo / Marka */
 .navbar-brand a {
+  color: #fff;
   text-decoration: none;
-  color: var(--bank-white);
   font-size: 1.5rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .navbar-brand strong {
-  font-weight: 800;
-  border-bottom: 3px solid var(--bank-blue);
+  color: #007bff;
 }
 
-/* Linki */
 .navbar-links {
   display: flex;
+  gap: 25px;
   align-items: center;
-  gap: 2rem;
 }
 
 .nav-link {
+  color: #ccd6f6;
   text-decoration: none;
-  color: var(--bank-gray);
   font-weight: 500;
-  font-size: 0.95rem;
-  transition: var(--transition);
-  position: relative;
-  padding: 5px 0;
+  font-size: 0.9rem;
+  transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: var(--bank-white);
+  color: #007bff;
 }
 
-/* Efekt podkreślenia po najechaniu */
-.nav-link::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--bank-white);
-  transition: var(--transition);
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-/* Status logowania */
 .auth-status {
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 8px 15px;
-  border-radius: 20px;
-  gap: 10px;
-}
-
-.auth-status p {
-  margin: 0;
-  color: var(--bank-white);
-  font-size: 0.85rem;
-  font-weight: 400;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .status-dot {
-  width: 8px;
-  height: 8px;
-  background-color: var(--status-off);
+  width: 10px;
+  height: 10px;
+  background-color: #ef4444; /* Domyślnie czerwony */
   border-radius: 50%;
-  box-shadow: 0 0 5px var(--status-off);
+  margin-right: 10px;
+  box-shadow: 0 0 8px #ef4444;
 }

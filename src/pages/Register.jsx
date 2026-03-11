@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../css/main.css";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -127,21 +128,6 @@ const Register = () => {
               Siła hasła: <b>{passwordStrength}</b>
             </p>
           )}
-
-          {/* Password strength bar (do wystylizowania w CSS)
-
-            .password-strength  -> kontener paska (np. szerokość 100%, wysokość ok. 6–10px, tło np. szare)
-            .strength-bar       -> właściwy pasek pokazujący siłę hasła (width zmieniana przez klasy)
-
-            Klasy siły hasła dodawane dynamicznie:
-            .weak    -> słabe hasło (np. czerwony kolor, mała szerokość)
-            .medium  -> średnie hasło (np. pomarańczowy kolor, średnia szerokość)
-            .strong  -> silne hasło (np. zielony kolor, pełna szerokość)
-
-            W CSS można dodać:
-            - transition dla płynnej animacji zmiany szerokości
-            - border-radius dla zaokrąglonych rogów
-            - różne kolory dla klas weak / medium / strong */}
 
           <div className="password-strength">
             <div className={`strength-bar ${passwordStrength}`}></div>

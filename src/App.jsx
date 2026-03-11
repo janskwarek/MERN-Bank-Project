@@ -11,7 +11,7 @@ import ProtectedRoute from "./Components/ProtectedRoute";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <NavBar />
 
       <main className="main-content">
