@@ -1,6 +1,7 @@
 // src/pages/Login.jsx
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../css/forms.css";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -28,7 +29,7 @@ const Login = () => {
     //   navigate('/dashboard');
     // } catch (err) { ... }
 
-    //sztuczne lopgowanie tymczasowe z gemini zeby frontend zrobic
+    // tymczasowe logowanie do testów frontendu
     if (formData.email === "test@test" && formData.password === "12345") {
       console.log("Zalogowano pomyślnie!");
       localStorage.setItem("token", "sztuczny_token_jwt_do_testow");
@@ -40,12 +41,12 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <h2>Zaloguj się do Banku</h2>
+      <h2>Bank JL</h2>
       {error && <p className="error-message">{error}</p>}
 
       <form onSubmit={handleSubmit} className="login-form">
         <div className="form-group">
-          <label>Email:</label>
+          <label>Email</label>
           <input
             type="email"
             name="email"
@@ -57,7 +58,7 @@ const Login = () => {
         </div>
 
         <div className="form-group">
-          <label>Hasło:</label>
+          <label>Hasło</label>
           <input
             type="password"
             name="password"
@@ -69,9 +70,10 @@ const Login = () => {
         </div>
 
         <button type="submit" className="login-btn">
-          Zaloguj
+          Zaloguj się
         </button>
       </form>
+
       <p>
         Nie masz konta? <a href="/register">Zarejestruj się</a>
       </p>

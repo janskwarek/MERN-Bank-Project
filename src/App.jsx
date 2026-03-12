@@ -1,8 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./Components/Navbar";
-import Footer from "./Components/Footer.jsx";
 import HomePage from "./pages/HomePage";
+import NavBar from "./Components/Navbar.jsx";
 import HistoryPage from "./pages/HistoryPage";
 import ProfilePage from "./pages/ProfilePage";
 import Login from "./pages/Login";
@@ -45,8 +44,6 @@ function App() {
           />
         </Routes>
       </main>
-
-      <Footer />
     </div>
   );
 }
