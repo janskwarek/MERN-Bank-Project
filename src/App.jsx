@@ -7,6 +7,7 @@ import HistoryPage from "./pages/HistoryPage";
 import ProfilePage from "./pages/ProfilePage";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import { ApplicationForm } from "./pages/AcountAplicationForm.jsx";
 import ProtectedRoute from "./Components/ProtectedRoute";
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
             }
           />
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/register" element={<ApplicationForm />} />
+          
 
           <Route
             path="/history"
