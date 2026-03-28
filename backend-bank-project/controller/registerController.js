@@ -1,3 +1,5 @@
 export const registerController = (req,res) => {
-    res.send("Register route");
+    // const {FirstName,LastName,PersonalIdType,PersonalIdNumber,Email,DateOfBirth,PhoneNumber,City,Country,Street,PostalCode} = req.body;
+    res.json({message:"Registration successful", data:req.body});
+
 }

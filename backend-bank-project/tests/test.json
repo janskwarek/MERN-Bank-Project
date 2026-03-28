@@ -1,0 +1,13 @@
+{
+  "PersonalIdType": "Passport",
+  "PersonalIdNumber": "AB123456",
+  "FirstName": "John",
+  "LastName": "Doe",
+  "DateOfBirth": "1990-05-15",
+  "Email": "john.doe@example.com",
+  "PhoneNumber": "+48123456789",
+  "Country": "Poland",
+  "City": "Sosnowiec",
+  "Street": "ul. Glowna 12",
+  "PostalCode": "41-200"
+}

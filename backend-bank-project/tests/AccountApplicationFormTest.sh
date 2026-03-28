@@ -1,0 +1,1 @@
+curl.exe -v -X POST http://localhost:5000/api/AccountApplicationForm -H "Content-Type: application/json" -d "@tests\test.json"
